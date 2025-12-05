@@ -1,0 +1,23 @@
+<% if (page.total > 1) { %>
+  <nav class="pagination-container">
+    <div class="pagination-link <%= page.prev ? '' : 'disabled' %>">
+      <% if (page.prev) { %>
+        <a href="<%- url_for(page.prev_link) %>">&laquo; 上一頁</a>
+      <% } else { %>
+        <span>&laquo; 上一頁</span>
+      <% } %>
+    </div>
+    
+    <div class="page-info">
+      第 <%= page.current %> 頁 / 共 <%= page.total %> 頁
+    </div>
+
+    <div class="pagination-link <%= page.next ? '' : 'disabled' %>">
+      <% if (page.next) { %>
+        <a href="<%- url_for(page.next_link) %>">下一頁 &raquo;</a>
+      <% } else { %>
+        <span>下一頁 &raquo;</span>
+      <% } %>
+    </div>
+  </nav>
+<% } %>
