@@ -1,0 +1,30 @@
+<%- partial('_partial/head') %>
+<body>
+  <%- partial('_partial/header') %>
+
+  <main class="main-content">
+    <div class="container post-container">
+      <article class="post-detail">
+        <header class="post-header">
+          <h1><%= page.title %></h1>
+          <p class="post-meta">
+            發佈於 <time datetime="<%= date_xml(page.date) %>"><%= date(page.date, 'YYYY-MM-DD HH:mm') %></time>
+            <% if (page.tags && page.tags.length){ %>
+              | Tags:
+              <% page.tags.each(function(tag){ %>
+                <a href="<%- url_for(tag.path) %>" class="post-tag"><%= tag.name %></a>
+              <% }); %>
+            <% } %>
+          </p>
+        </header>
+
+        <div class="post-content">
+          <%- page.content %> </div>
+
+        </article>
+    </div>
+  </main>
+
+  <%- partial('_partial/footer') %>
+</body>
+</html>

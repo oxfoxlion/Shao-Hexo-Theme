@@ -69,3 +69,78 @@ body {
 .nav-menu li a:hover {
     color: #ffc107; /* 懸停時變為亮黃色 */
 }
+
+.main-content {
+    padding: 40px 0;
+    min-height: 70vh; /* 確保內容區塊不會太短 */
+}
+
+/* 文章卡片 (用於首頁列表) */
+.post-card {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.post-card h3 a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.post-card h3 a:hover {
+    color: #007bff;
+}
+
+.post-meta {
+    font-size: 0.9em;
+    color: #666;
+    margin-top: -10px;
+    margin-bottom: 15px;
+}
+
+.read-more {
+    display: inline-block;
+    color: #007bff;
+    text-decoration: none;
+    margin-top: 10px;
+}
+.read-more:hover {
+    text-decoration: underline;
+}
+
+/* 單篇文章頁面 */
+.post-detail {
+    max-width: 800px; /* 限制文章寬度，讓閱讀更舒適 */
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+}
+
+.post-content h2, .post-content h3 {
+    border-bottom: 2px solid #eee;
+    padding-bottom: 5px;
+    margin-top: 30px;
+}
+
+/* 網站底部 */
+.site-footer {
+    background-color: #222;
+    color: #aaa;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.85em;
+}
+
+.site-footer a {
+    color: #aaa;
+    text-decoration: none;
+}
+
+.site-footer a:hover {
+    color: #fff;
+}
