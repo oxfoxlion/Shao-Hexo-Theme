@@ -1,0 +1,71 @@
+/* themes/my-custom-theme/source/css/style.css */
+
+/* 基礎樣式 Reset */
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #f4f4f4; /* 輕微的背景色 */
+}
+
+/* 網站容器設定 (用於居中和限制寬度) */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    /* 清除浮動 */
+    overflow: hidden; 
+}
+
+/* --- 導航欄樣式 --- */
+.site-header {
+    background-color: #333; /* 深色背景 */
+    color: #fff;
+    padding: 15px 0;
+}
+
+/* 導航內容排列 */
+.site-header .container {
+    display: flex; /* 啟用 Flexbox */
+    justify-content: space-between; /* 網站標題和導航選單兩端對齊 */
+    align-items: center; /* 垂直居中對齊 */
+}
+
+/* 網站標題/Logo 樣式 */
+.site-branding .site-title a {
+    color: #fff;
+    text-decoration: none; /* 移除下劃線 */
+    font-size: 1.8em;
+    margin: 0;
+}
+.site-branding .site-subtitle {
+    font-size: 0.8em;
+    opacity: 0.8;
+    margin: 0;
+}
+
+
+/* 導航選單 (UL) 樣式 */
+.nav-menu {
+    list-style: none; /* 移除點符號 */
+    margin: 0;
+    padding: 0;
+    display: flex; /* 讓選單項橫向排列 */
+}
+
+/* 導航選單項 (LI) 樣式 */
+.nav-menu li {
+    margin-left: 20px;
+}
+
+/* 導航連結 (A) 樣式 */
+.nav-menu li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: color 0.3s;
+}
+
+/* 鼠標懸停效果 */
+.nav-menu li a:hover {
+    color: #ffc107; /* 懸停時變為亮黃色 */
+}
